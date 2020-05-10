@@ -10,11 +10,12 @@
 export default {
   methods:{
     ReqSuc(){
-      // alert('test');
-      this.axios('http://huangjiajian.top/index.html').then(res=>{console.log(res.request.responseText)})
+      // this.axios('http://huangjiajian.top/index.html').then(res=>{console.log(res.request.responseText)})
+      // 上面的方式也是可以的，下面的url写法是基于axios的baseURL的
+      this.axios('/index.html').then(res=>{console.log(res.request.responseText)})
     },
     RquFail(){
-      this.axios('/index.html').then(res=>{console.log(res.request.responseText)})
+      this.axios('http://1234sicns.com')
     }
   }
 }
