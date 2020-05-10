@@ -11,10 +11,10 @@ export default {
   methods:{
     ReqSuc(){
       // alert('test');
-      this.axios('http://huangjiajian.top/index.html')
+      this.axios('http://huangjiajian.top/index.html').then(res=>{console.log(res.request.responseText)})
     },
     RquFail(){
-      this.axios('http://123456pp.com')
+      this.axios('/index.html').then(res=>{console.log(res.request.responseText)})
     }
   }
 }
