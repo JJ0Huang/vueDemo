@@ -28,6 +28,7 @@ axios.interceptors.response.use(
   response => {
     elementUI.Loading.service().close();
     elementUI.Message.success('请求成功...')
+    console.log('res.data:',response.data)
     return response;
   },
   error => {

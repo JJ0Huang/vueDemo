@@ -8,6 +8,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 import '@api/http.js'
 Vue.use(elementUI)
 Vue.use(vueAxios,axios)
+import api from './api/api.js'
+Vue.prototype.$api=api;
 
 Vue.config.productionTip = false
 
