@@ -10,7 +10,11 @@
 export default {
   methods: {
     ReqSuc() {
-      this.$api.getIndex()
+      // this.$api.getIndex()
+      console.log(this.$api)
+      // this.$api.Index.get();
+      console.log(this.$api.Index())
+      this.$api.Index().get();
     },
     RquFail() {
       this.axios("http://1234sicns.com");
